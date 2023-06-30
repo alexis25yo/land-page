@@ -1,22 +1,157 @@
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-// @import "./shop.scss";
-// @import "./login.scss";
-// @import "./universal.scss";
-// @import "./variables.scss";
+@import "variables";
 
-// button.swal2-confirm.swal2-styled {
-//     background-color: $color-cerulan;
-//     box-shadow: none !important;
-// }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Epilogue;
+    background-color: $Almost-White;
+}
 
-// .active-view-shop {
-//     display: block;
-// }
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px 0 15px;
+    color: $Medium-Gray;
+    font-weight: 500;
+    font-family:  Epilogue;
+}
 
-// .active-view-login {
-//     display: flex;
-// }
+.header__items{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 40%;
+    justify-content: space-between;
+}
 
-// .hidden {
-//     display: none;
-// }
+.items__figures{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.header__buttons{
+    display: flex;
+    padding-right: 5%;
+    width: 20%;
+    justify-content: end;
+    gap: 10%;
+}
+
+.header__buttons .Login{
+    border: none;
+    background-color: $Almost-White;
+    padding: 10px;
+    cursor: pointer;
+    color: $Medium-Gray;
+    font-weight: 400;
+    font-family:  Epilogue;
+}
+
+.header__buttons .Register{
+    border-radius: 12px;
+    border: 2px solid $Medium-Gray;
+    background-color: $Almost-White;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    color: $Medium-Gray;
+    font-weight: 400;
+    font-family:  Epilogue;
+}
+.banner{
+    position: relative;
+    display: flex;
+    padding: 0 20px 0 20px;
+}
+
+.banner__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;    
+    width: 50%;
+    padding: 100px 0 0 100px;
+}
+
+.banner__left h1{
+    font-size: 75px;
+}
+
+.banner__left p{
+    color: $Medium-Gray;
+}
+
+.banner__right{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    position: relative
+}
+
+.banner .banner__image img{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 40px;
+    left: 100px;
+}
+
+.banner__button{
+    width: 100px;
+    padding: 10px 15px 10px 15px ;
+    border-radius: 10px;
+    background-color: $Almost-Black;
+    color: $Almost-White;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.banner__logos{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.banner__logos img{
+    width: 12%;
+    height: auto;
+}
+
+.banner__features{
+    position: absolute;
+    top: 0;
+    left: 130px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    padding: 10px;
+    font-weight: 400;
+    color: $Medium-Gray;
+    display: none;
+}
+
+.banner__features p {
+    padding: 5px;
+}
+
+.banner__company{
+    position: absolute;
+    top: 0;
+    left: 275px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    font-weight: 400;
+    color: $Medium-Gray;
+    display: none;
+}
+
+.banner__company p {
+    padding: 5px;
+}
+
+.show{
+    display: block;
+}

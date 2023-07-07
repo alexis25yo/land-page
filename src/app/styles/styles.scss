@@ -40,6 +40,9 @@
     justify-content: end;
     gap: 10%;
 }
+.header__menuRe{
+    display: none;
+}
 
 .header__buttons .Login{
     border: none;
@@ -75,7 +78,14 @@
     width: 50%;
     padding: 100px 0 0 100px;
 }
-
+.banner__imageRe{
+    
+    display: none;
+}
+.banner__imageRe img{
+    width: 350px;
+    height: auto;
+}
 .banner__left h1{
     font-size: 75px;
 }
@@ -154,4 +164,43 @@
 
 .show{
     display: block;
+}
+
+@media (max-width: 400px){
+    .banner__right{
+        display: none;
+    }
+    .banner .banner__image img{
+        display: none;
+    }
+    .banner__imageRe{
+      display: block;
+    }
+    .banner__left{
+        padding: 5px 0 0 10px;
+    }
+    .header__items{
+        display: none;
+    }
+    .header__buttons{
+        display: none;
+    }
+    .header__menuRe{
+        display: block;
+        cursor: pointer;
+    }
+    .banner__left{
+        width: 100%;
+    }
+    .banner__left h1{
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .banner__button{
+        margin-left: 120px;
+        display: flex;
+        justify-content: center;
+    }
+
 }

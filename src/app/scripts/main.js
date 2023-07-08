@@ -1,12 +1,22 @@
-import { features, company, menu, menu2} from "./services/dataDom";
+import { features, company, menu, menu2, featuresRe, menuR, companyRe, menuR2, ButtonMenu, fullMenu} from "./services/dataDom";
 import "../styles/styles.scss";
 
 features.addEventListener("click", () => {
   menu.classList.toggle("show");
-  console.log("Hice click en features");
 });
 
 company.addEventListener("click", () => {
   menu2.classList.toggle("show");
-  console.log("Hice click en company");
+});
+
+featuresRe.addEventListener("click", () => {
+  menuR.classList.toggle("showRe");
+});
+
+companyRe.addEventListener("click", () => {
+  menuR2.classList.toggle("showRe");
+});
+
+ButtonMenu.addEventListener("click", () => {
+  fullMenu.classList.toggle("showRe");
 });

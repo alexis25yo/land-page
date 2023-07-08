@@ -133,7 +133,7 @@
 .banner__features{
     position: absolute;
     top: 0;
-    left: 130px;
+    left: 220px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
     padding: 10px;
@@ -149,7 +149,7 @@
 .banner__company{
     position: absolute;
     top: 0;
-    left: 275px;
+    left: 420px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
@@ -165,6 +165,69 @@
 .show{
     display: block;
 }
+.banner__menuRe{
+    width: 150px;
+    padding-left:  20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    display: none;
+    width: 230px;
+    height: 550px; 
+}
+.menuRe__items{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+}
+.menuRe__features{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    display: none;
+}
+
+.menuRe__figures{
+    display: flex;
+}
+.menuRe__company{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+.showRe{
+    display: block;
+}
+.menuRe__buttons{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.menuRe__buttons .Login{
+    border: none;
+    background-color: $Almost-White;
+    padding: 10px;
+    cursor: pointer;
+    color: $Medium-Gray;
+    font-weight: 400;
+    font-family:  Epilogue;
+}
+.menuRe__buttons .Register{
+    border-radius: 12px;
+    border: 2px solid $Medium-Gray;
+    background-color: $Almost-White;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    color: $Medium-Gray;
+    font-weight: 400;
+    font-family:  Epilogue;
+}
+
 
 @media (max-width: 400px){
     .banner__right{
@@ -202,5 +265,8 @@
         display: flex;
         justify-content: center;
     }
-
+    .banner__left p{
+        padding: 0 20px 0 20px;
+    }
+    
 }

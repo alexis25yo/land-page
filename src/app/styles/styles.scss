@@ -21,7 +21,6 @@
 .header__items {
   display: flex;
   align-items: center;
-  cursor: pointer;
   width: 40%;
   justify-content: space-between;
 }
@@ -30,6 +29,19 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
+}
+
+.items__figures:hover {
+  color: $color-hover;
+}
+
+.header__items h4 {
+  cursor: pointer;
+}
+
+.header__items h4:hover {
+  color: $color-hover;
 }
 
 .header__buttons {
@@ -53,6 +65,11 @@
   font-family: Epilogue;
 }
 
+.header__buttons .Login:hover {
+  color: $color-hover;
+  font-weight: 600;
+}
+
 .header__buttons .Register {
   border-radius: 12px;
   border: 2px solid $Medium-Gray;
@@ -62,6 +79,12 @@
   color: $Medium-Gray;
   font-weight: 400;
   font-family: Epilogue;
+}
+
+.header__buttons .Register:hover {
+  color: $color-hover;
+  font-weight: 600;
+  border: 2px solid $color-hover;
 }
 .banner {
   position: relative;
@@ -170,11 +193,31 @@
 
 .banner__company p {
   padding: 5px;
+  cursor: pointer;
+}
+
+.banner__company p:hover {
+  color: $color-hover;
 }
 
 .show {
   display: block;
 }
+
+.velo {
+  position: absolute;
+  top: -47px;
+  left: -230px;
+  width: 230px;
+  height: 550px;
+  background-color: $Medium-Black;
+  transition: left 0.5s ease;
+}
+
+.showVel {
+  left: 0px;
+}
+
 .banner__menuRe {
   padding: 20px;
   display: flex;
@@ -185,6 +228,7 @@
   width: 230px;
   height: 550px;
   transition: right 0.5s ease;
+  z-index: 1;
 }
 
 .menuRe__icon {
@@ -198,6 +242,7 @@
   flex-direction: column;
   gap: 15px;
   cursor: pointer;
+  color: $Medium-Gray;
 }
 .menuRe__features {
   display: flex;

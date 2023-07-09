@@ -9,3 +9,4 @@ export const menuR = document.querySelector(".menuRe__features");
 export const menuR2 = document.querySelector(".menuRe__company");
 export const fullMenu = document.querySelector(".banner__menuRe");
 export const closetMenu = document.querySelector(".menuRe__icon");
+export const velo = document.querySelector(".velo");

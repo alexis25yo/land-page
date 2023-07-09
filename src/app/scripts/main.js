@@ -10,6 +10,7 @@ import {
   ButtonMenu,
   fullMenu,
   closetMenu,
+  velo,
 } from "./services/dataDom";
 import "../styles/styles.scss";
 
@@ -31,9 +32,11 @@ companyRe.addEventListener("click", () => {
 
 ButtonMenu.addEventListener("click", () => {
   fullMenu.classList.add("showRe");
+  velo.classList.add("showVel");
 });
 
 closetMenu.addEventListener("click", () => {
   fullMenu.classList.remove("showRe");
+  velo.classList.remove("showVel");
 });
 //prueba de ramas

@@ -10,12 +10,14 @@
 
 .header__nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 20px 15px 0 15px;
   color: $Medium-Gray;
   font-weight: 500;
   font-family: Epilogue;
+  width: 100%;
 }
 
 .header__items {
@@ -49,8 +51,9 @@
   padding-right: 5%;
   width: 20%;
   justify-content: end;
-  gap: 10%;
+  gap: 10px;
 }
+
 .header__menuRe {
   display: none;
 }
@@ -99,6 +102,12 @@
   gap: 30px;
   width: 50%;
   padding: 100px 0 0 100px;
+}
+@media screen and (max-width: 768px) {
+  .banner__left {
+    width: 100%; /* Cambiar el ancho al 100% en dispositivos móviles */
+    padding: 50px 20px 0 20px; /* Ajustar los valores de padding para dispositivos móviles */
+  }
 }
 .banner__imageRe {
   display: none;
@@ -223,12 +232,13 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: -47px;
-  right: -230px;
+  top: -597px;
+  right: 0;
   width: 230px;
   height: 550px;
-  transition: right 0.5s ease;
+  transition: top 0.5s ease;
   z-index: 1;
+  display: none;
 }
 
 .menuRe__icon {
@@ -274,7 +284,9 @@
 }
 
 .showRe {
-  right: 0;
+  top: -47px;
+  z-index: 1;
+  //visibility: visible; /* Muestra el elemento cuando se aplica la clase showRe */
 }
 
 .showRe2 {
@@ -307,6 +319,9 @@
 }
 
 @media (max-width: 400px) {
+  .banner__menuRe {
+    display: block;
+  }
   .banner__right {
     display: none;
   }

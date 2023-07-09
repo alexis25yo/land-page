@@ -1,272 +1,315 @@
 @import "variables";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:  Epilogue;
-    background-color: $Almost-White;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Epilogue;
+  background-color: $Almost-White;
 }
 
-.header__nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 15px 0 15px;
-    color: $Medium-Gray;
-    font-weight: 500;
-    font-family:  Epilogue;
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px 0 15px;
+  color: $Medium-Gray;
+  font-weight: 500;
+  font-family: Epilogue;
 }
 
-.header__items{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: 40%;
-    justify-content: space-between;
+.header__items {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 40%;
+  justify-content: space-between;
 }
 
-.items__figures{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.items__figures {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-
-.header__buttons{
-    display: flex;
-    padding-right: 5%;
-    width: 20%;
-    justify-content: end;
-    gap: 10%;
+.header__buttons {
+  display: flex;
+  padding-right: 5%;
+  width: 20%;
+  justify-content: end;
+  gap: 10%;
 }
-.header__menuRe{
-    display: none;
-}
-
-.header__buttons .Login{
-    border: none;
-    background-color: $Almost-White;
-    padding: 10px;
-    cursor: pointer;
-    color: $Medium-Gray;
-    font-weight: 400;
-    font-family:  Epilogue;
+.header__menuRe {
+  display: none;
 }
 
-.header__buttons .Register{
-    border-radius: 12px;
-    border: 2px solid $Medium-Gray;
-    background-color: $Almost-White;
-    padding: 5px 15px 5px 15px;
-    cursor: pointer;
-    color: $Medium-Gray;
-    font-weight: 400;
-    font-family:  Epilogue;
-}
-.banner{
-    position: relative;
-    display: flex;
-    padding: 0 20px 0 20px;
+.header__buttons .Login {
+  border: none;
+  background-color: $Almost-White;
+  padding: 10px;
+  cursor: pointer;
+  color: $Medium-Gray;
+  font-weight: 400;
+  font-family: Epilogue;
 }
 
-.banner__left{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 30px;    
-    width: 50%;
-    padding: 100px 0 0 100px;
+.header__buttons .Register {
+  border-radius: 12px;
+  border: 2px solid $Medium-Gray;
+  background-color: $Almost-White;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  color: $Medium-Gray;
+  font-weight: 400;
+  font-family: Epilogue;
 }
-.banner__imageRe{
-    
-    display: none;
-}
-.banner__imageRe img{
-    width: 350px;
-    height: auto;
-}
-.banner__left h1{
-    font-size: 75px;
+.banner {
+  position: relative;
+  display: flex;
+  padding: 0 20px 0 20px;
 }
 
-.banner__left p{
-    color: $Medium-Gray;
+.banner__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 30px;
+  width: 50%;
+  padding: 100px 0 0 100px;
+}
+.banner__imageRe {
+  display: none;
+}
+.banner__imageRe img {
+  width: 330px;
+  height: auto;
+}
+.banner__left h1 {
+  font-size: 75px;
 }
 
-.banner__right{
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    position: relative
+.banner__left p {
+  color: $Medium-Gray;
 }
 
-.banner .banner__image img{
-    width: 350px;
-    height: auto;
-    position: absolute;
-    top: 40px;
-    left: 100px;
+.banner__left .p2 {
+  display: none;
 }
 
-.banner__button{
-    width: 100px;
-    padding: 10px 15px 10px 15px ;
-    border-radius: 10px;
-    background-color: $Almost-Black;
-    color: $Almost-White;
-    cursor: pointer;
-    border: none;
-    font-weight: bold;
-}
-.banner__logos{
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
+.banner__right {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.banner__logos img{
-    width: 12%;
-    height: auto;
+.banner .banner__image img {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  top: 40px;
+  left: 100px;
 }
 
-.banner__features{
-    position: absolute;
-    top: 0;
-    left: 220px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
-    padding: 10px;
-    font-weight: 400;
-    color: $Medium-Gray;
-    display: none;
+.banner__button {
+  width: 100px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+  background-color: $Almost-Black;
+  color: $Almost-White;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.banner__button:hover {
+  color: $Almost-Black;
+  background-color: $Almost-White;
+  border: 1px solid $Almost-Black;
+  font-weight: 700;
+}
+
+.banner__logos {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.banner__logos img {
+  width: 12%;
+  height: auto;
+}
+
+.banner__features {
+  position: absolute;
+  top: 0;
+  left: 220px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  font-weight: 400;
+  color: $Medium-Gray;
+  display: none;
 }
 
 .banner__features p {
-    padding: 5px;
+  padding: 5px;
 }
 
-.banner__company{
-    position: absolute;
-    top: 0;
-    left: 420px;
-    border-radius: 8px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding: 10px;
-    font-weight: 400;
-    color: $Medium-Gray;
-    display: none;
+.banner__company {
+  position: absolute;
+  top: 0;
+  left: 420px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 10px;
+  font-weight: 400;
+  color: $Medium-Gray;
+  display: none;
 }
 
 .banner__company p {
-    padding: 5px;
+  padding: 5px;
 }
 
-.show{
+.show {
+  display: block;
+}
+.banner__menuRe {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -47px;
+  right: -230px;
+  width: 230px;
+  height: 550px;
+  transition: right 0.5s ease;
+}
+
+.menuRe__icon {
+  display: flex;
+  justify-content: end;
+}
+
+.menuRe__items {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  cursor: pointer;
+}
+.menuRe__features {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.menuRe__features figure {
+  display: flex;
+}
+
+.menuRe__features img {
+  padding: 5px;
+}
+
+.menuRe__features figcaption {
+  padding: 5px;
+}
+
+.menuRe__company {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.menuRe__company p {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.showRe {
+  right: 0;
+}
+
+.showRe2 {
+  display: none;
+}
+
+.menuRe__buttons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.menuRe__buttons .Login {
+  background-color: $Almost-White;
+  padding: 10px;
+  cursor: pointer;
+  color: $Medium-Gray;
+  font-weight: 400;
+  font-family: Epilogue;
+  border: none;
+}
+.menuRe__buttons .Register {
+  border-radius: 12px;
+  border: 2px solid $Medium-Gray;
+  background-color: $Almost-White;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  color: $Medium-Gray;
+  font-weight: 400;
+  font-family: Epilogue;
+}
+
+@media (max-width: 400px) {
+  .banner__right {
+    display: none;
+  }
+  .banner .banner__image img {
+    display: none;
+  }
+  .banner__imageRe {
     display: block;
-}
-.banner__menuRe{
-    width: 150px;
-    padding-left:  20px;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0px;
-    left: 150px;
+  }
+  .banner__left {
+    padding: 5px 0 0 10px;
+    width: 100%;
+    gap: 20px;
+  }
+  .header__items {
     display: none;
-    width: 230px;
-    height: 550px; 
-}
-.menuRe__items{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    cursor: pointer;
-}
-.menuRe__features{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  }
+  .header__buttons {
     display: none;
-}
-
-.menuRe__figures{
-    display: flex;
-}
-.menuRe__company{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    display: none;
-}
-.showRe{
+  }
+  .header__menuRe {
     display: block;
-}
-.menuRe__buttons{
+    cursor: pointer;
+  }
+  .banner__left h1 {
     display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-}
-.menuRe__buttons .Login{
-    border: none;
-    background-color: $Almost-White;
-    padding: 10px;
-    cursor: pointer;
-    color: $Medium-Gray;
-    font-weight: 400;
-    font-family:  Epilogue;
-}
-.menuRe__buttons .Register{
-    border-radius: 12px;
-    border: 2px solid $Medium-Gray;
-    background-color: $Almost-White;
-    padding: 5px 15px 5px 15px;
-    cursor: pointer;
-    color: $Medium-Gray;
-    font-weight: 400;
-    font-family:  Epilogue;
-}
-
-
-@media (max-width: 400px){
-    .banner__right{
-        display: none;
-    }
-    .banner .banner__image img{
-        display: none;
-    }
-    .banner__imageRe{
-      display: block;
-    }
-    .banner__left{
-        padding: 5px 0 0 10px;
-    }
-    .header__items{
-        display: none;
-    }
-    .header__buttons{
-        display: none;
-    }
-    .header__menuRe{
-        display: block;
-        cursor: pointer;
-    }
-    .banner__left{
-        width: 100%;
-    }
-    .banner__left h1{
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-    }
-    .banner__button{
-        margin-left: 120px;
-        display: flex;
-        justify-content: center;
-    }
-    .banner__left p{
-        padding: 0 20px 0 20px;
-    }
-    
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .banner__button {
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+  }
+  .banner__logos {
+    width: 100%;
+  }
+  .banner__logos img {
+    width: 15%;
+    margin: 20px 0 50px 0;
+  }
+  .banner__left p {
+    display: none;
+  }
+  .banner__left .p2 {
+    display: block;
+    text-align: center;
+    font-weight: 800;
+  }
 }
